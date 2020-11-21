@@ -1,0 +1,1 @@
+& C:/Users/dell/Envs/webapp/Scripts/Activate.ps1

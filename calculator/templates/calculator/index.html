@@ -1,0 +1,21 @@
+{% extends 'calculator/base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <input type="number" name="num1"><br><br>
+            <input type="text" name="operator" class="operator"><br><br>
+            <input type="number" name="num2">
+            <button type="submit" class="btn btn-primary">=</button>
+        </form>
+        {% for message in messages %}
+
+            {{message}}
+
+        {% endfor %}
+        answer: {{result}}
+    </div>
+{% endblock %}
